@@ -1,0 +1,37 @@
+This folder contains all the raw and processed datasets used in the Churn Analysis project. Below is a description of each file:
+
+##Customer_Info.csv
+
+Description: Contains demographic details of customers, such as gender, age, tenure, and senior citizen status.
+Columns: CustomerID, Gender, Age, Tenure, SeniorCitizen, etc.
+
+##Location_Data.csv
+
+Description: Provides information about the geographical location of customers, including their region and city.
+Columns: CustomerID, Region, City.
+
+Online_Services.csv
+
+Description: Includes data on the usage of online services such as streaming, online backups, and device protection.
+Columns: CustomerID, StreamingMovies, StreamingTV, OnlineBackup, DeviceProtection, etc.
+
+Payment_Info.csv
+
+Description: Contains payment-related data such as billing method, contract type, and monthly charges.
+Columns: CustomerID, PaymentMethod, ContractType, MonthlyCharges, TotalCharges.
+
+Service_Options.csv
+
+Description: Lists the services subscribed by each customer, such as internet type, phone services, and additional options.
+Columns: CustomerID, PhoneService, InternetService, TechSupport, MultipleLines.
+
+Status_Analysis.csv
+
+Description: Tracks customers' activity status and their churn status.
+Columns: CustomerID, ChurnStatus, ActiveDays.
+
+a_IBM_Telco_Customers_Churn_Datasets.csv
+
+Description: A comprehensive dataset consolidating information from all other datasets.
+Columns: Combination of columns from all datasets above.
+
