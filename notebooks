@@ -1,1 +1,12 @@
+# Understanding Dissatisfaction Across Connection Types:
 
+--------------------------
+
+select count(o.customer_id) as Total_customers, o.internet_type, s.churn_category, s.churn_reason
+from status_analysis s
+join online_services o on s.customer_id = o.customer_id
+where s.churn_category != 'Not Applicable' and o.internet_type = 'Fiber Optic'
+group by s. churn_category, s.churn_reason, o.internet_type
+order by Total_customers desc;
+
+--------------------------
