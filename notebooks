@@ -1,6 +1,5 @@
-# Understanding Dissatisfaction Across Connection Types:
-
---------------------------
+-----------------------
+##Understanding Dissatisfaction Across Connection Types:
 
 select count(o.customer_id) as Total_customers, o.internet_type, s.churn_category, s.churn_reason
 from status_analysis s
@@ -10,3 +9,18 @@ group by s. churn_category, s.churn_reason, o.internet_type
 order by Total_customers desc;
 
 --------------------------
+
+##Churn Rate Patterns by Customer Contract Type:
+#For Churned Customers:--
+select count(s.customer_id) as Total_customers, p.contract, p.payment_method, s.churn_category, s.churn_reason
+from status_analysis s
+join payment_info p on s.customer_id = p.customer_id
+where s.churn_category != 'Not Applicable' 
+group by s. churn_category, s.churn_reason, p.contract, p.payment_method
+order by Total_customers desc;
+
+# For active customers:--
+
+---------------------------------
+
+
